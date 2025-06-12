@@ -54,6 +54,32 @@ function App() {
             <img src="https://placehold.co/600x400" alt="" />
           </div>
         </section>
+        <section className="wellbeing">
+          <h3 className="wellbeing__title">Wellbeing is welldoing</h3>
+          <div className="wellbeing__main">
+            <ul className="wellbeing__list">
+              <li className="wellbeing__item">
+                <img src="https://placehold.co/58x57" alt="leaf" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
+                  a. Diam lacus platea orci vel elit.
+                </p>
+              </li>
+              <li className="wellbeing__item">
+                <img src="https://placehold.co/58x57" alt="leaf" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
+                  a. Diam lacus platea orci vel elit.
+                </p>
+              </li>
+            </ul>
+            <img
+              className="wellbeing__image"
+              src="https://placehold.co/291x294"
+              alt=""
+            />
+          </div>
+        </section>
       </main>
     </div>
   );

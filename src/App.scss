@@ -3,6 +3,7 @@ $colorTextSecondary: #2b2b2b;
 $colorSurfacePrimary: #ffffff;
 $colorBrandPrimary: #285e67;
 $colorBrandSecondary: #fce2d7;
+$colorBackground: #f4f4f4;
 $colorLogo: #eaeaea;
 
 @mixin styleText($fontFamily, $fontStack, $fontWeight, $fontSize, $lineHeight) {
@@ -92,5 +93,18 @@ $colorLogo: #eaeaea;
       flex-direction: column;
       gap: 28px;
     }
+  }
+}
+.wellbeing {
+  background-color: $colorBackground;
+
+  &__main {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+  }
+  &__image {
+    margin: 0 auto;
   }
 }
