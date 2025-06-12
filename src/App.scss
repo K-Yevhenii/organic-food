@@ -82,6 +82,10 @@ $colorLogo: #eaeaea;
     display: flex;
     margin: 0 auto;
   }
+  &__image {
+    height: 100%;
+    max-width: auto;
+  }
 
   &__images {
     display: flex;
@@ -105,6 +109,7 @@ $colorLogo: #eaeaea;
     display: flex;
   }
   &__image {
-    margin: 0 auto;
+    height: 100%;
+    max-width: auto;
   }
 }

@@ -50,8 +50,8 @@ function App() {
           </p>
           <button className="hero__button">Join now</button>
           <div className="hero__images">
-            <img src="https://placehold.co/600x400" alt="" />
-            <img src="https://placehold.co/600x400" alt="" />
+            <img className="hero__image" src="jared-rice.png" alt="" />
+            <img className="hero__image" src="katherine-hanlon.png" alt="" />
           </div>
         </section>
         <section className="wellbeing">
@@ -59,7 +59,11 @@ function App() {
           <div className="wellbeing__main">
             <ul className="wellbeing__list">
               <li className="wellbeing__item">
-                <img src="https://placehold.co/58x57" alt="leaf" />
+                <img
+                  className="wellbeing__images"
+                  src="https://placehold.co/58x57"
+                  alt="leaf"
+                />
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
                   a. Diam lacus platea orci vel elit.
@@ -73,11 +77,7 @@ function App() {
                 </p>
               </li>
             </ul>
-            <img
-              className="wellbeing__image"
-              src="https://placehold.co/291x294"
-              alt=""
-            />
+            <img className="wellbeing__image" src="./Group.png" alt="" />
           </div>
         </section>
       </main>
