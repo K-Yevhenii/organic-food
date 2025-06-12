@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <a href="#">
-          <div className="header__logo">
-            {/* <div className="header__logo-ellipse">Logo</div> */}
-            <h3 className="header__text-logo">Logo</h3>
-          </div>
-        </a>
+        <div className="header__logo">
+          <a className="header__text-logo" href="#">
+            Logo
+          </a>
+        </div>
+
         <nav className="header__menu-nav nav">
           <ul className="nav__contacts">
             <li className="nav__item">
@@ -41,12 +41,14 @@ function App() {
 
       <main>
         <section className="hero">
-          <h1>The dawn of a new era in health is here</h1>
-          <p>
+          <h1 className="hero__title">
+            The dawn of a new era in health is here
+          </h1>
+          <p className="hero__description">
             Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam
-            lacus platea orci vel elit blandit facilisis{" "}
+            lacus platea orci vel elit blandit facilisis
           </p>
-          <button>Join now</button>
+          <button className="hero__button">Join now</button>
           <div className="hero__images">
             <img src="https://placehold.co/600x400" alt="" />
             <img src="https://placehold.co/600x400" alt="" />
