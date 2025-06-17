@@ -32,7 +32,7 @@ $colorLogo: #eaeaea;
       content: "";
       width: 26px;
       height: 26px;
-      background-color: #d0d0d0;
+      background-color: $colorBackground;
       border-radius: 50%;
     }
   }
@@ -112,4 +112,79 @@ $colorLogo: #eaeaea;
     height: 100%;
     max-width: auto;
   }
+  &__icon {
+    padding: 14px 16px;
+    border-radius: 9px;
+    background-color: $colorBrandPrimary;
+  }
+}
+
+.produce {
+  background-color: $colorBackground;
+  display: flex;
+  &__image {
+    height: auto;
+    max-width: 100%;
+  }
+  &__content {
+    margin: 0 auto 0 53px;
+  }
+  &__title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 50.52px;
+    line-height: 1.2;
+  }
+  &__content-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+}
+.nutrition-info {
+  display: flex;
+  justify-content: center;
+  background-color: $colorBackground;
+  &__content {
+  }
+  &__title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 50.52px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+  &____description {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+  &__icon {
+    padding: 14px 16px;
+    border-radius: 9px;
+    background-color: $colorBrandSecondary;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+}
+.wellbeing-starts {
+  background-image: url("/public/background-img.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  max-width: 1300px;
+  color: $colorSurfacePrimary;
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }
