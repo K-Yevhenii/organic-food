@@ -21,6 +21,7 @@ $colorLogo: #eaeaea;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 32px 18px 142px;
 
   &__logo {
     display: flex;
@@ -52,7 +53,7 @@ $colorLogo: #eaeaea;
   &__contact {
     @include styleText("Poppins", sans-serif, 400, 16px, 1.14);
     color: $colorTextSecondary;
-    padding: 0 5px;
+    padding: 10px 5px;
   }
 }
 .container {
@@ -61,6 +62,7 @@ $colorLogo: #eaeaea;
 }
 
 .hero {
+  margin: 0 0 72px;
   &__title {
     font-family: Poppins;
     font-weight: 600;
@@ -68,6 +70,7 @@ $colorLogo: #eaeaea;
     line-height: 82px;
     text-align: center;
     color: $colorTextPrimary;
+    margin: 0 0 17px;
   }
 
   &__description {
@@ -77,18 +80,31 @@ $colorLogo: #eaeaea;
     line-height: 24px;
     text-align: center;
     color: $colorTextSecondary;
+    margin: 0 0 33px;
   }
   &__button {
+    margin: 0 auto 72px;
+    display: block;
+    border-radius: 67px;
+    gap: 16px;
+    padding: 16px 77px;
+    background-color: $colorBrandPrimary;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 24px;
+    color: $colorSurfacePrimary;
+  }
+  &__images-wrapper {
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
   }
   &__image {
-    height: 100%;
-    max-width: auto;
+    height: auto;
+    max-width: 100%;
   }
 
   &__images {
-    display: flex;
     @media (min-width: 430px) {
       justify-content: space-between;
       gap: 48px;
@@ -100,91 +116,252 @@ $colorLogo: #eaeaea;
   }
 }
 .wellbeing {
+  display: flex;
+  justify-content: space-around;
   background-color: $colorBackground;
+  margin: 0 0 104px;
 
   &__main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   &__list {
     display: flex;
+    align-items: center;
+    gap: 69px;
+    max-width: 589px;
   }
+
   &__image {
     height: 100%;
     max-width: auto;
+    padding: 144px 0 8px;
   }
+
+  &__title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 50.52px;
+    line-height: 62px;
+    letter-spacing: 0px;
+    padding: 0 0 61px;
+  }
+
   &__icon {
     padding: 14px 16px;
     border-radius: 9px;
     background-color: $colorBrandPrimary;
+    margin: 0 0 20px;
+  }
+
+  &__content-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .produce {
   background-color: $colorBackground;
   display: flex;
+  gap: 50px;
+  margin: 0 0 104px;
+
   &__image {
     height: auto;
     max-width: 100%;
   }
+
   &__content {
-    margin: 0 auto 0 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
   &__title {
     font-family: Poppins;
     font-weight: 600;
     font-size: 50.52px;
     line-height: 1.2;
+    display: block;
+    padding: 0 0 50px;
   }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
   &__content-text {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    display: block;
   }
+
   &__item {
     display: flex;
     align-items: center;
   }
 }
+
 .nutrition-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: $colorBackground;
+
   &__content {
+    max-width: 543px;
   }
+
   &__title {
     font-family: Poppins;
     font-weight: 600;
     font-size: 50.52px;
     line-height: 30px;
-    letter-spacing: 0px;
+    padding: 0 0 41px;
   }
-  &____description {
+  &__description {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
   }
+
   &__icon {
     padding: 14px 16px;
     border-radius: 9px;
     background-color: $colorBrandSecondary;
+    margin: 0 0 20px;
   }
-  &__item {
+  &__list {
     display: flex;
-    align-items: center;
+    gap: 69px;
+  }
+
+  &__item {
   }
 }
+
 .wellbeing-starts {
   background-image: url("/public/background-img.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
   max-width: 1300px;
-  color: $colorSurfacePrimary;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 0 228px;
+    max-width: 650px;
+  }
+
+  &__icon {
+    padding: 0 0 45px;
+  }
+
+  &__title {
+    padding: 0 0 12px;
+    color: $colorSurfacePrimary;
+  }
+
+  &__description {
+    padding: 0 0 28px;
+    color: $colorSurfacePrimary;
+  }
+
+  &__button {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 24px;
+    text-align: center;
+    gap: 16px;
+    border-radius: 67px;
+    border: solid 1px;
+    padding: 16px;
+  }
+}
+
+.features {
+  max-width: 1165px;
   display: flex;
-  justify-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: $colorBrandSecondary;
+  transform: translateY(-50%);
+
+  &__list {
+    display: flex;
+  }
+
+  &__button {
+    width: 257;
+    height: 56;
+    gap: 16px;
+    border-radius: 67px;
+    border-width: 1px;
+    padding: 16px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: $colorBrandPrimary;
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+    &::before {
+      content: "";
+      width: 26px;
+      height: 26px;
+      background-color: $colorSurfacePrimary;
+      border-radius: 50%;
+    }
+  }
+
+  &__text-logo {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $colorSurfacePrimary;
+    padding: 0 5px;
+  }
+
+  &__contact {
+    @include styleText("Poppins", sans-serif, 400, 16px, 1.14);
+    color: $colorSurfacePrimary;
+    padding: 10px 5px;
+  }
+
+  &__link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.nav-footer {
+  &__contacts {
+    display: flex;
+    gap: 40px;
+  }
 }

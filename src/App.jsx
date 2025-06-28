@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <div className="header__logo">
+        <a className="header__logo" href="#">
           <a className="header__text-logo" href="#">
             Logo
           </a>
-        </div>
+        </a>
 
         <nav className="header__menu-nav nav">
           <ul className="nav__contacts">
@@ -51,31 +51,33 @@ function App() {
           </p>
           <button className="hero__button">Join now</button>
           <div className="hero__images">
-            <img className="hero__image" src="jared-rice.png" alt="" />
-            <img className="hero__image" src="katherine-hanlon.png" alt="" />
+            <div className="hero__images-wrapper">
+              <img className="hero__image" src="jared-rice.png" alt="" />
+              <img className="hero__image" src="katherine-hanlon.png" alt="" />
+            </div>
           </div>
         </section>
         <section className="wellbeing">
-          <h3 className="wellbeing__title">Wellbeing is welldoing</h3>
           <div className="wellbeing__main">
+            <h2 className="wellbeing__title">Wellbeing is welldoing</h2>
             <ul className="wellbeing__list">
               <li className="wellbeing__item">
                 <img className="wellbeing__icon" src="leaf.svg" alt="leaf" />
-                <p>
+                <p className="wellbeing__content-text">
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
                   a. Diam lacus platea orci vel elit.
                 </p>
               </li>
               <li className="wellbeing__item">
                 <img className="wellbeing__icon" src="leaf.svg" alt="leaf" />
-                <p>
+                <p className="wellbeing__content-text">
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
                   a. Diam lacus platea orci vel elit.
                 </p>
               </li>
             </ul>
-            <img className="wellbeing__image" src="./Group.png" alt="" />
           </div>
+          <img className="wellbeing__image" src="./Group.png" alt="" />
         </section>
         <section className="produce">
           <img
@@ -84,7 +86,7 @@ function App() {
             alt="fresh organic produce"
           />
           <div className="produce__content">
-            <h3 className="produce__title">Fresh organic produce</h3>
+            <h2 className="produce__title">Fresh organic produce</h2>
             <ul className="produce__list">
               <p className="produce__content-text">
                 Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
@@ -136,7 +138,7 @@ function App() {
             className="nutrition-info__image"
           />
           <div className="nutrition-info__content">
-            <h3 className="nutrition-info__title">You are what you eat</h3>
+            <h2 className="nutrition-info__title">You are what you eat</h2>
             <ul className="nutrition-info__list">
               <li className="nutrition-info__item">
                 <img
@@ -164,15 +166,15 @@ function App() {
           </div>
         </section>
         <section className="wellbeing-starts">
-          <div className="wellbeing-start__content">
+          <div className="wellbeing-starts__content">
             <img
               src="/public/leaf.svg"
               alt="leaf"
               className="wellbeing-starts__icon"
             />
-            <h3 className="wellbeing-starts__title">
+            <h2 className="wellbeing-starts__title">
               Wellbeing starts with welldoing
-            </h3>
+            </h2>
             <p className="wellbeing-starts__description">
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
               Diam lacus platea orci vel elit blandit facilisis enim risus. Ut
@@ -180,44 +182,107 @@ function App() {
             </p>
             <button className="wellbeing-starts__button">Join now</button>
           </div>
-          <section className="features">
-            <ul className="features__list">
-              <li className="features__item">
-                <img
-                  src="/public/twig-leafs.svg"
-                  alt="twig with leafs"
-                  className="features__icon"
-                />
-                <p className="features__text"></p>
-              </li>
-              <li className="features__item">
-                <img
-                  src="/public/twig-leafs.svg"
-                  alt="twig with leafs"
-                  className="features__icon"
-                />
-                <p className="features__text"></p>
-              </li>
-              <li className="features__item">
-                <img
-                  src="/public/twig-leafs.svg"
-                  alt="twig with leafs"
-                  className="features__icon"
-                />
-                <p className="features__text"></p>
-              </li>
-              <li className="features__item">
-                <img
-                  src="/public/twig-leafs.svg"
-                  alt="twig with leafs"
-                  className="features__icon"
-                />
-                <p className="features__text"></p>
-              </li>
-            </ul>
-          </section>
+        </section>
+        <section className="features">
+          <ul className="features__list">
+            <li className="features__item">
+              <img
+                src="/public/twig-leafs.svg"
+                alt="twig with leafs"
+                className="features__icon"
+              />
+              <p className="features__text">Plant Protective</p>
+            </li>
+            <li className="features__item">
+              <img
+                src="/public/twig-leafs.svg"
+                alt="twig with leafs"
+                className="features__icon"
+              />
+              <p className="features__text">Plant Protective</p>
+            </li>
+            <li className="features__item">
+              <img
+                src="/public/twig-leafs.svg"
+                alt="twig with leafs"
+                className="features__icon"
+              />
+              <p className="features__text">Plant Protective</p>
+            </li>
+            <li className="features__item">
+              <img
+                src="/public/twig-leafs.svg"
+                alt="twig with leafs"
+                className="features__icon"
+              />
+              <p className="features__text">Plant Protective</p>
+            </li>
+          </ul>
         </section>
       </main>
+      <footer className="footer">
+        <div>
+          <a className="footer__logo" href="#">
+            <a className="footer__text-logo" href="#">
+              Logo
+            </a>
+          </a>
+          <ul className="footer__link-list">
+            <li className="footer__link-item">
+              <img
+                src="/public/twitter-icon.svg"
+                alt=""
+                className="footer__link-icon"
+              />
+            </li>
+            <li className="footer__link-item">
+              <img
+                src="/public/instagram-icon.svg"
+                alt=""
+                className="footer__link-icon"
+              />
+            </li>
+            <li className="footer__link-item">
+              <img
+                src="/public/linkedin-icon.svg"
+                alt=""
+                className="footer__link-icon"
+              />
+            </li>
+            <li className="footer__link-item">
+              <img
+                src="/public/facebook-icon.svg"
+                alt=""
+                className="footer__link-icon"
+              />
+            </li>
+          </ul>
+        </div>
+        <nav className="footer__menu-nav nav-footer">
+          <ul className="nav__contacts">
+            <li className="nav__item">
+              <a className="nav__contact" href="#">
+                About
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__contact" href="/public/twitter-icon.svg">
+                Services
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__contact" href="">
+                Team
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__contact" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
   );
 }
