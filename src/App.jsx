@@ -98,9 +98,9 @@ function App() {
                 <img
                   src="/public/produce-icon.svg"
                   alt="produce icon"
-                  className="produce__icon"
+                  className="produce__icon-item"
                 />
-                <p>
+                <p className="produce__text-item">
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
                   a. Diam lacus platea
                 </p>
@@ -109,9 +109,9 @@ function App() {
                 <img
                   src="/public/produce-icon.svg"
                   alt="produce icon"
-                  className="produce__icon"
+                  className="produce__icon-item"
                 />
-                <p>
+                <p className="produce__text-item">
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
                   a. Diam lacus platea
                 </p>
@@ -120,9 +120,9 @@ function App() {
                 <img
                   src="/public/produce-icon.svg"
                   alt="produce icon"
-                  className="produce__icon"
+                  className="produce__icon-item"
                 />
-                <p>
+                <p className="produce__text-item">
                   Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
                   a. Diam lacus platea
                 </p>
@@ -222,11 +222,13 @@ function App() {
       </main>
       <footer className="footer">
         <div>
-          <a className="footer__logo" href="#">
-            <a className="footer__text-logo" href="#">
-              Logo
+          <div className="footer__logo-wrapper">
+            <a className="footer__logo" href="#">
+              <a className="footer__text-logo" href="#">
+                Logo
+              </a>
             </a>
-          </a>
+          </div>
           <ul className="footer__link-list">
             <li className="footer__link-item">
               <img
@@ -259,24 +261,27 @@ function App() {
           </ul>
         </div>
         <nav className="footer__menu-nav nav-footer">
-          <ul className="nav__contacts">
-            <li className="nav__item">
-              <a className="nav__contact" href="#">
+          <ul className="footer-nav__contacts">
+            <li className="footer-nav__item">
+              <a className="footer-nav__contact" href="#">
                 About
               </a>
             </li>
-            <li className="nav__item">
-              <a className="nav__contact" href="/public/twitter-icon.svg">
+            <li className="footer-nav__item">
+              <a
+                className="footer-nav__contact"
+                href="/public/twitter-icon.svg"
+              >
                 Services
               </a>
             </li>
-            <li className="nav__item">
-              <a className="nav__contact" href="">
+            <li className="footer-nav__item">
+              <a className="footer-nav__contact" href="">
                 Team
               </a>
             </li>
-            <li className="nav__item">
-              <a className="nav__contact" href="#">
+            <li className="footer-nav__item">
+              <a className="footer-nav__contact" href="#">
                 Contact
               </a>
             </li>
