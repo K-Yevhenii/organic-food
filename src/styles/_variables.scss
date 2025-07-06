@@ -1,0 +1,18 @@
+$colorTextPrimary: #2a2a2a;
+$colorTextSecondary: #2b2b2b;
+$colorSurfacePrimary: #ffffff;
+$colorBrandPrimary: #285e67;
+$colorBrandSecondary: #fce2d7;
+$colorBackground: #f4f4f4;
+$colorLogo: #eaeaea;
+
+* {
+  text-decoration: inherit;
+}
+
+@mixin styleText($fontFamily, $fontStack, $fontWeight, $fontSize, $lineHeight) {
+  font-family: $fontFamily, $fontStack;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
