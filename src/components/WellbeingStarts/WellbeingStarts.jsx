@@ -1,13 +1,10 @@
 import "./WellbeingStarts.scss";
+import LeafIcon from "../../assets/Svg/Icon/leafIcon";
 function WellbeingStarts() {
   return (
     <section className="wellbeing-starts">
       <div className="wellbeing-starts__content">
-        <img
-          src="/public/leaf.svg"
-          alt="leaf"
-          className="wellbeing-starts__icon"
-        />
+        <LeafIcon alt="leaf" className="wellbeing-starts__icon" />
         <h2 className="wellbeing-starts__title">
           Wellbeing starts with welldoing
         </h2>

@@ -5,49 +5,16 @@
   justify-content: space-around;
   align-items: center;
   background-color: $colorBrandPrimary;
+  color: $colorSurfacePrimary;
 
   &__logo-wrapper {
-    padding: 78px 0 18px;
-  }
-
-  &__logo {
-    display: flex;
-    gap: 12px;
-    &::before {
-      content: "";
-      width: 26px;
-      height: 26px;
-      background-color: $colorSurfacePrimary;
-      border-radius: 50%;
-    }
-  }
-
-  &__text-logo {
-    font-family: Poppins;
-    font-size: 21.33px;
-    line-height: 24px;
-    letter-spacing: 0px;
-    text-align: center;
+    padding: 78px 0 0;
     color: $colorSurfacePrimary;
   }
-
   &__link-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 24px;
-    padding: 18px 0;
-  }
-}
-
-.footer-nav {
-  &__contacts {
-    display: flex;
-    gap: 40px;
-  }
-  &__contact {
-    @include styleText("Poppins", sans-serif, 400, 16px, 1.14);
-    color: $colorSurfacePrimary;
-    padding: 10px 5px;
+    padding: 18px 0 78px;
   }
 }

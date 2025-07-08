@@ -1,4 +1,5 @@
 import "./NutritionInfo.scss";
+import LeafIcon from "../../assets/Svg/Icon/leafIcon";
 function NutritionInfo() {
   return (
     <section className="nutrition-info">
@@ -11,22 +12,14 @@ function NutritionInfo() {
         <h2 className="nutrition-info__title">You are what you eat</h2>
         <ul className="nutrition-info__list">
           <li className="nutrition-info__item">
-            <img
-              src="/public/leaf.svg"
-              alt="leaf"
-              className="nutrition-info__icon"
-            />
+            <LeafIcon alt="leaf" className="nutrition-info__icon" />
             <p className="nutrition-info__description">
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
               Diam lacus platea orci vel elit.
             </p>
           </li>
           <li className="nutrition-info__item">
-            <img
-              src="/public/leaf.svg"
-              alt="leaf"
-              className="nutrition-info__icon"
-            />
+            <LeafIcon alt="leaf" className="nutrition-info__icon" />
             <p className="nutrition-info__description">
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
               Diam lacus platea orci vel elit.

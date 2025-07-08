@@ -1,4 +1,5 @@
 import "./Produce.scss";
+import ProduceIcon from "../../assets/Svg/Icon/produceIcon";
 
 function Produce() {
   return (
@@ -18,33 +19,21 @@ function Produce() {
             in amet sit viverra.
           </p>
           <li className="produce__item">
-            <img
-              src="/public/produce-icon.svg"
-              alt="produce icon"
-              className="produce__icon-item"
-            />
+            <ProduceIcon className="produce__icon-item" />
             <p className="produce__text-item">
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
               Diam lacus platea
             </p>
           </li>
           <li className="produce__item">
-            <img
-              src="/public/produce-icon.svg"
-              alt="produce icon"
-              className="produce__icon-item"
-            />
+            <ProduceIcon className="produce__icon-item" />
             <p className="produce__text-item">
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
               Diam lacus platea
             </p>
           </li>
           <li className="produce__item">
-            <img
-              src="/public/produce-icon.svg"
-              alt="produce icon"
-              className="produce__icon-item"
-            />
+            <ProduceIcon className="produce__icon-item" />
             <p className="produce__text-item">
               Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
               Diam lacus platea

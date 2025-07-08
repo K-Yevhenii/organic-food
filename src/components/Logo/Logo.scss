@@ -1,0 +1,24 @@
+@use "../../styles/variables" as *;
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 21.33px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $colorBrandPrimary;
+  padding: 0 5px;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: $colorBackground;
+    border-radius: 50%;
+  }
+}

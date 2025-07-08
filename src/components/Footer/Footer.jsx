@@ -1,70 +1,33 @@
 import "./Footer.scss";
+import Navigation from "../Navigation/Navigation";
+import Logo from "../Logo/Logo";
+import TwitterIcon from "../../assets/Svg/Icon/twitterIcon";
+import FacebookIcon from "../../assets/Svg/Icon/facebookIcon";
+import InstagramIcon from "../../assets/Svg/Icon/instagramIcon";
+import LinkedinIcon from "../../assets/Svg/Icon/linkedinIcon";
 function Footer() {
   return (
     <footer className="footer">
       <div>
         <div className="footer__logo-wrapper">
-          <a className="footer__logo" href="#">
-            <a className="footer__text-logo" href="#">
-              Logo
-            </a>
-          </a>
+          <Logo className="footer__logo" />
         </div>
         <ul className="footer__link-list">
           <li className="footer__link-item">
-            <img
-              src="/public/twitter-icon.svg"
-              alt=""
-              className="footer__link-icon"
-            />
+            <TwitterIcon alt="Twitter icon" className="footer__link-icon" />
           </li>
           <li className="footer__link-item">
-            <img
-              src="/public/instagram-icon.svg"
-              alt=""
-              className="footer__link-icon"
-            />
+            <InstagramIcon alt="" className="footer__link-icon" />
           </li>
           <li className="footer__link-item">
-            <img
-              src="/public/linkedin-icon.svg"
-              alt=""
-              className="footer__link-icon"
-            />
+            <LinkedinIcon alt="" className="footer__link-icon" />
           </li>
           <li className="footer__link-item">
-            <img
-              src="/public/facebook-icon.svg"
-              alt=""
-              className="footer__link-icon"
-            />
+            <FacebookIcon className="footer__link-icon" />
           </li>
         </ul>
       </div>
-      <nav className="footer__menu-nav nav-footer">
-        <ul className="footer-nav__contacts">
-          <li className="footer-nav__item">
-            <a className="footer-nav__contact" href="#">
-              About
-            </a>
-          </li>
-          <li className="footer-nav__item">
-            <a className="footer-nav__contact" href="/public/twitter-icon.svg">
-              Services
-            </a>
-          </li>
-          <li className="footer-nav__item">
-            <a className="footer-nav__contact" href="">
-              Team
-            </a>
-          </li>
-          <li className="footer-nav__item">
-            <a className="footer-nav__contact" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <Navigation className="header__menu-nav" />
     </footer>
   );
 }
