@@ -1,0 +1,53 @@
+@use "../../styles/variables" as *;
+
+.wellbeing-starts {
+  background-image: url("/public/background-img.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1300px;
+  padding: 110px 0;
+  margin: 0 0 12px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 0 228px;
+    max-width: 650px;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 48px;
+    border: 2px solid $colorSurfacePrimary;
+    padding: 17px;
+    border-radius: 9px;
+    margin: 0 0 45px;
+  }
+
+  &__title {
+    padding: 0 0 12px;
+    color: $colorSurfacePrimary;
+  }
+
+  &__description {
+    padding: 0 0 28px;
+    color: $colorSurfacePrimary;
+  }
+
+  &__button {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 21.33px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 67px;
+    border: solid 1px;
+    padding: 16px;
+    background: transparent;
+    color: $colorSurfacePrimary;
+    padding: 16px 80px;
+  }
+}
