@@ -1,5 +1,6 @@
 import "./Produce.scss";
 import { produceItem } from "./produceItem";
+import ProduceIcon from "../../assets/Svg/Icon/produceIcon";
 function Produce() {
   return (
     <section className="produce">
@@ -17,8 +18,9 @@ function Produce() {
             tristique eget integer odio nec vulputate consequat. Elit mattis ac
             in amet sit viverra.
           </p>
-          {produceItem.map(({ id, Icon, text }) => (
+          {produceItem.map(({ id, text }) => (
             <li key={id} className="produce__item">
+              <ProduceIcon />
               <p className="produce__text-item">{text}</p>
             </li>
           ))}
