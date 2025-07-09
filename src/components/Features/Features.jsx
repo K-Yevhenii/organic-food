@@ -1,26 +1,16 @@
 import "./Features.scss";
-import TwigLeafIcon from "../../assets/Svg/Icon/twigLeafsIcon";
-
+import { featuresItems } from "./featuresItems";
 function Features() {
   return (
     <section className="features">
       <ul className="features__list">
-        <li className="features__item">
-          <TwigLeafIcon alt="twig with leafs" className="features__icon" />
-          <p className="features__text">Plant Protective</p>
-        </li>
-        <li className="features__item">
-          <TwigLeafIcon alt="twig with leafs" className="features__icon" />
-          <p className="features__text">Plant Protective</p>
-        </li>
-        <li className="features__item">
-          <TwigLeafIcon alt="twig with leafs" className="features__icon" />
-          <p className="features__text">Plant Protective</p>
-        </li>
-        <li className="features__item">
-          <TwigLeafIcon alt="twig with leafs" className="features__icon" />
-          <p className="features__text">Plant Protective</p>
-        </li>
+        {featuresItems.map(({ id, Icon, text }) => (
+          <li key={id} className="features__item">
+            {Icon}
+            <p className="features__text">{text}</p>
+          </li>
+        ))}
+        ;
       </ul>
     </section>
   );

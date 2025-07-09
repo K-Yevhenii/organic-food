@@ -1,6 +1,5 @@
 import "./Produce.scss";
-import ProduceIcon from "../../assets/Svg/Icon/produceIcon";
-
+import { produceItem } from "./produceItem";
 function Produce() {
   return (
     <section className="produce">
@@ -18,28 +17,12 @@ function Produce() {
             tristique eget integer odio nec vulputate consequat. Elit mattis ac
             in amet sit viverra.
           </p>
-          <li className="produce__item">
-            <ProduceIcon className="produce__icon-item" />
-            <p className="produce__text-item">
-              Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-              Diam lacus platea
-            </p>
-          </li>
-          <li className="produce__item">
-            <ProduceIcon className="produce__icon-item" />
-            <p className="produce__text-item">
-              Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-              Diam lacus platea
-            </p>
-          </li>
-          <li className="produce__item">
-            <ProduceIcon className="produce__icon-item" />
-            <p className="produce__text-item">
-              Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-              Diam lacus platea
-            </p>
-          </li>
-          <li className="produce__item"></li>
+          {produceItem.map(({ id, Icon, text }) => (
+            <li key={id} className="produce__item">
+              <p className="produce__text-item">{text}</p>
+            </li>
+          ))}
+          ;
         </ul>
       </div>
     </section>
