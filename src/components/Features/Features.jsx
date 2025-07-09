@@ -1,5 +1,5 @@
 import "./Features.scss";
-import { featuresItems } from "./featuresItems";
+import featuresItems from "./featuresItems.tem";
 function Features() {
   return (
     <section className="features">
