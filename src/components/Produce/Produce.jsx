@@ -1,5 +1,5 @@
 import "./Produce.scss";
-import { produceItem } from "./produceItem";
+import produceItem from "./produceItem";
 import ProduceIcon from "../../assets/Svg/Icon/produceIcon";
 function Produce() {
   return (
@@ -20,7 +20,7 @@ function Produce() {
           </p>
           {produceItem.map(({ id, text }) => (
             <li key={id} className="produce__item">
-              <ProduceIcon />
+              <ProduceIcon className="produce__icon" />
               <p className="produce__text-item">{text}</p>
             </li>
           ))}

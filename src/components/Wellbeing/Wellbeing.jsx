@@ -10,7 +10,7 @@ function Wellbeing() {
         <ul className="wellbeing__list">
           {wellbeingList.map(({ id, text }) => (
             <li key={id} className="wellbeing__item">
-              <LeafIcon />
+              <LeafIcon className="wellbeing__icon" />
               <p className="wellbeing__content-text">{text}</p>
             </li>
           ))}

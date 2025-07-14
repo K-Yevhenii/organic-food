@@ -7,7 +7,7 @@ function Features() {
       <ul className="features__list">
         {featuresItems.map(({ id, text }) => (
           <li key={id} className="features__item">
-            <TwigLeafIcon />
+            <TwigLeafIcon className="features__item" />
             <p className="features__text">{text}</p>
           </li>
         ))}

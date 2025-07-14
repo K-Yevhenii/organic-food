@@ -1,11 +1,11 @@
 import "./NutritionInfo.scss";
-import { nutritionInfoItem } from "./nutritionInfoItem";
+import nutritionInfoItem from "./nutritionInfoItem";
 import LeafIcon from "../../assets/Svg/Icon/leafIcon";
 function NutritionInfo() {
   return (
     <section className="nutrition-info">
       <img
-        src="/Illustration-eat-nutur.png"
+        src="Illustration-eat-nutur.png"
         alt="natur product"
         className="nutrition-info__image"
       />
@@ -14,7 +14,7 @@ function NutritionInfo() {
         <ul className="nutrition-info__list">
           {nutritionInfoItem.map(({ id, text }) => (
             <li key={id} className="nutrition-info__item">
-              <LeafIcon />
+              <LeafIcon className="nutrition-info__icon" />
               <p className="nutrition-info__description">{text}</p>
             </li>
           ))}
