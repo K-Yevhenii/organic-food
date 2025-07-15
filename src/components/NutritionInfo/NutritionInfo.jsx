@@ -18,7 +18,6 @@ function NutritionInfo() {
               <p className="nutrition-info__description">{text}</p>
             </li>
           ))}
-          ;
         </ul>
       </div>
     </section>

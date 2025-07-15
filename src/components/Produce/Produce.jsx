@@ -24,7 +24,6 @@ function Produce() {
               <p className="produce__text-item">{text}</p>
             </li>
           ))}
-          ;
         </ul>
       </div>
     </section>

@@ -14,7 +14,6 @@ function Wellbeing() {
               <p className="wellbeing__content-text">{text}</p>
             </li>
           ))}
-          ;
         </ul>
       </div>
       <img className="wellbeing__image" src="/yoga.png" alt="" />
