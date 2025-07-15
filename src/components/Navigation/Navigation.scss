@@ -1,9 +1,11 @@
 @use "../../styles/variables" as *;
+
 .nav {
   &__contacts {
     display: flex;
     gap: 40px;
   }
+
   &__contact {
     font-family: Poppins;
     font-weight: 400;

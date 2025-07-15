@@ -2,7 +2,19 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 32px 18px 142px;
+  @media (max-width: 520px) {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__menu-nav {
+  @media (min-width: 481px) {
+    display: block;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
