@@ -4,9 +4,11 @@ import FacebookIcon from "../../assets/Svg/Icon/facebookIcon";
 import InstagramIcon from "../../assets/Svg/Icon/instagramIcon";
 import LinkedinIcon from "../../assets/Svg/Icon/linkedinIcon";
 
-export const footerSocialLinks = [
-    { name: 'Twitter', Icon: TwitterIcon },
-    { name: 'Facebook', Icon: FacebookIcon },
-    { name: 'Instagram', Icon: InstagramIcon },
-    { name: 'LinkedIn', Icon: LinkedinIcon },
+const footerSocialLinks = [
+    { name: 'Twitter', icon: TwitterIcon },
+    { name: 'Facebook', icon: FacebookIcon },
+    { name: 'Instagram', icon: InstagramIcon },
+    { name: 'LinkedIn', icon: LinkedinIcon },
 ];
+
+export default footerSocialLinks;
