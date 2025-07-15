@@ -3,14 +3,14 @@
 // import viteLogo from "/vite.svg";
 
 import "./App.scss";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Wellbeing from "./components/Wellbeing/Wellbeing";
-import Produce from "./components/Produce/Produce";
-import NutritionInfo from "./components/NutritionInfo/NutritionInfo";
-import WellbeingStarts from "./components/WellbeingStarts/WellbeingStarts";
-import Features from "./components/Features/Features";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Wellbeing from "./components/Wellbeing";
+import Produce from "./components/Produce";
+import NutritionInfo from "./components/NutritionInfo";
+import WellbeingStarts from "./components/WellbeingStarts";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 function App() {
   return (

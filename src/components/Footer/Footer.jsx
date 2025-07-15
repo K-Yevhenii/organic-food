@@ -1,10 +1,7 @@
 import "./Footer.scss";
 import Navigation from "../Navigation/Navigation";
 import Logo from "../Logo/Logo";
-import TwitterIcon from "../../assets/Svg/Icon/twitterIcon";
-import FacebookIcon from "../../assets/Svg/Icon/facebookIcon";
-import InstagramIcon from "../../assets/Svg/Icon/instagramIcon";
-import LinkedinIcon from "../../assets/Svg/Icon/linkedinIcon";
+import footerSocialLinks from "./footerSocialLinks";
 function Footer() {
   return (
     <footer className="footer">
@@ -13,18 +10,11 @@ function Footer() {
           <Logo className="footer__logo" />
         </div>
         <ul className="footer__link-list">
-          <li className="footer__link-item">
-            <TwitterIcon alt="Twitter icon" className="footer__link-icon" />
-          </li>
-          <li className="footer__link-item">
-            <InstagramIcon alt="" className="footer__link-icon" />
-          </li>
-          <li className="footer__link-item">
-            <LinkedinIcon alt="" className="footer__link-icon" />
-          </li>
-          <li className="footer__link-item">
-            <FacebookIcon className="footer__link-icon" />
-          </li>
+          {footerSocialLinks.map(({ name, icon: Icon }) => (
+            <li className="footer__link-item" key={name}>
+              <Icon className="footer__link-icon" />
+            </li>
+          ))}
         </ul>
       </div>
       <Navigation className="header__menu-nav" />
