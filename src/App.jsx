@@ -3,19 +3,17 @@
 // import viteLogo from "/vite.svg";
 
 import "./App.scss";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Wellbeing from "./components/Wellbeing";
 import Produce from "./components/Produce";
 import NutritionInfo from "./components/NutritionInfo";
 import WellbeingStarts from "./components/WellbeingStarts";
 import Features from "./components/Features";
-import Footer from "./components/Footer";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="container">
-      <Header />
+    <Layout>
       <main>
         <Hero />
         <Wellbeing />
@@ -24,8 +22,7 @@ function App() {
         <WellbeingStarts />
         <Features />
       </main>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 
