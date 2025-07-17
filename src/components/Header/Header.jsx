@@ -1,5 +1,5 @@
 import "./Header.scss";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../Navigation";
 import Logo from "../Logo/Logo";
 import BurgerMenu from "../BurgerMenu";
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <Logo className="header__logo" />
       <BurgerMenu />
-      <Navigation className="header__menu-nav" />
+      <Navigation className="header__menu-nav " />
     </header>
   );
 }

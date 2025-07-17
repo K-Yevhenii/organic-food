@@ -11,14 +11,23 @@ const BurgerMenu = ({ className }) => {
     <div className={clsx("burger-menu", className)}>
       <button className="burger__btn" onClick={toggleMenu}>
         <span
-          className={isOpen ? "burger__icon  burger__open" : "burger__icon"}
+          className={clsx(
+            "burger__icon",
+            { burger__menu_open: isOpen },
+            className
+          )}
         >
-          OpenMobile
+          Mobile
         </span>
       </button>
       {isOpen && (
-        <div className="burger-menu__content">
-          <Navigation className="burger-nav" />
+        <div className="mobile-menu">
+          <div className="burger-menu__content">
+            <Navigation
+              className="burger-nav"
+              listClassName="burger-nav__list"
+            />
+          </div>
         </div>
       )}
     </div>

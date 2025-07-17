@@ -1,4 +1,11 @@
 @use "../../styles/variables" as *;
+.mobile-menu {
+  right: -40%;
+  width: 100vw;
+  height: 100vh;
+  background-color: $colorBrandPrimary;
+  transition: right 1s cubic-bezier(0.38, 0.5, 0.32, 1.54);
+}
 
 .burger-menu {
   @media (min-width: 481px) {
@@ -10,64 +17,31 @@
     position: relative;
 
     &__btn {
-      background: none;
-      border: none;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
     }
+
     &__content {
       display: block;
       background: transparent;
-
-      &::before {
-        top: 0;
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        top: 0;
-        transform: rotate(-45deg);
-      }
-    }
-    &__icon {
-      display: block;
-      height: 3px;
-      background: #000;
-      position: relative;
-      transition: 0.3s;
-
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background: #000;
-        transition: 0.3s;
-      }
-
-      &::before {
-        top: -8px;
-      }
-
-      &::after {
-        top: 8px;
-      }
-
-      &.open {
-        background: transparent;
-
-        &::before {
-          top: 0;
-          transform: rotate(45deg);
-        }
-
-        &::after {
-          top: 0;
-          transform: rotate(-45deg);
-        }
-      }
+      display: flex;
+      flex-direction: column;
     }
   }
+
+  &_open {
+    right: 0;
+  }
+  &__icon {
+  }
+}
+
+.burger-nav {
+  &__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.burger-menu__btn {
+  cursor: pointer;
+  // position: absolute;
+  z-index: 100;
 }
