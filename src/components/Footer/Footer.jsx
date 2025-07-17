@@ -17,7 +17,7 @@ function Footer() {
           ))}
         </ul>
       </div>
-      <Navigation className="header__menu-nav" />
+      <Navigation />
     </footer>
   );
 }
