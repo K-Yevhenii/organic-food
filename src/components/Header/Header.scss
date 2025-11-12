@@ -2,7 +2,18 @@
 
 .header {
   display: flex;
+  margin: 32px 18px 142px;
   justify-content: space-between;
   align-items: center;
-  margin: 32px 18px 142px;
+
+  &__menu-nav {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__burger {
+    @media (min-width: 481px) {
+      display: none;
+    }
+  }
 }

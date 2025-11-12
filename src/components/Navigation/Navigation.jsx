@@ -2,10 +2,10 @@ import clsx from "clsx";
 import "./Navigation.scss";
 import navContactsLinks from "./navContactsLinks";
 
-function Navigation({ className }) {
+function Navigation({ className, listClassName }) {
   return (
     <nav className={clsx("nav", className)}>
-      <ul className="nav__contacts">
+      <ul className={clsx("nav__contacts", listClassName)}>
         {navContactsLinks.map(({ label, href }) => (
           <li className="nav__item" key={label}>
             <a className="nav__contact" href={href}>
