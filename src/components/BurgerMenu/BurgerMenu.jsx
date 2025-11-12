@@ -8,29 +8,19 @@ const BurgerMenu = ({ className }) => {
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <div className={clsx("burger-menu", className)}>
-      <button className="burger__btn" onClick={toggleMenu}>
-        <span
-          className={clsx(
-            "burger__icon",
-            { burger__menu_open: isOpen },
-            className
-          )}
-        >
+    <>
+      <button className={clsx("burger", className)} onClick={toggleMenu}>
+        <span className={clsx("burger__icon", { burger__menu_open: isOpen })}>
           Mobile
         </span>
       </button>
-      {isOpen && (
-        <div className="mobile-menu">
-          <div className="burger-menu__content">
-            <Navigation
-              className="burger-nav"
-              listClassName="burger-nav__list"
-            />
-          </div>
+
+      <div className={clsx("mobile-menu", { "mobile-menu_open": isOpen })}>
+        <div className="mobile-menu__content">
+          <Navigation listClassName="mobile-menu__list" />
         </div>
-      )}
-    </div>
+      </div>
+    </>
   );
 };
 
