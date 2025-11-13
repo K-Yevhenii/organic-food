@@ -4,12 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: $colorSurfacePrimary;
-  background-color: $colorBrandPrimary;
+  color: $color-surface-primary;
+  background-color: $color-brand-primary;
 
   &__logo-wrapper {
     padding: 78px 0 0;
-    color: $colorSurfacePrimary;
+    color: $color-surface-primary;
   }
 
   &__link-list {
