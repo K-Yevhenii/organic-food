@@ -2,52 +2,57 @@
 
 .hero {
   margin: 0 0 72px;
+
   &__title {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 65.34px;
-    line-height: 82px;
-    text-align: center;
-    color: $colorTextPrimary;
     margin: 0 0 17px;
+    font-family: Poppins, sans-serif;
+    font-size: 65.34px;
+    font-weight: 600;
+    line-height: 82px;
+    color: $color-text-primary;
+    text-align: center;
   }
 
   &__description {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: $colorTextSecondary;
     margin: 0 0 33px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-text-secondary;
+    text-align: center;
   }
+
   &__button {
-    margin: 0 auto 72px;
     display: block;
-    border-radius: 67px;
     gap: 16px;
     padding: 16px 77px;
-    background-color: $colorBrandPrimary;
-    font-family: Poppins;
-    font-weight: 600;
+    margin: 0 auto 72px;
+    font-family: Poppins, sans-serif;
     font-size: 21.33px;
+    font-weight: 600;
     line-height: 24px;
-    color: $colorSurfacePrimary;
+    color: $color-surface-primary;
+    background-color: $color-brand-primary;
+    border-radius: 67px;
   }
+
   &__images-wrapper {
     display: flex;
     justify-content: space-between;
   }
+
   &__image {
-    height: auto;
     max-width: 100%;
+    height: auto;
   }
 
   &__images {
     @media (min-width: 430px) {
-      justify-content: space-between;
       gap: 48px;
+      justify-content: space-between;
     }
+
     @media (max-width: 430px) {
       flex-direction: column;
       gap: 28px;

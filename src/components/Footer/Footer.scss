@@ -2,19 +2,20 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: $colorBrandPrimary;
-  color: $colorSurfacePrimary;
+  justify-content: space-around;
+  color: $color-surface-primary;
+  background-color: $color-brand-primary;
 
   &__logo-wrapper {
     padding: 78px 0 0;
-    color: $colorSurfacePrimary;
+    color: $color-surface-primary;
   }
+
   &__link-list {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     padding: 18px 0 78px;
   }
 }

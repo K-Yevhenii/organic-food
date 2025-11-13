@@ -8,18 +8,18 @@ import Features from "./components/Features";
 import Layout from "./components/Layout";
 
 function App() {
-  return (
-    <Layout>
-      <main>
-        <Hero />
-        <Wellbeing />
-        <Produce />
-        <NutritionInfo />
-        <WellbeingStarts />
-        <Features />
-      </main>
-    </Layout>
-  );
+    return (
+        <Layout>
+            <main>
+                <Hero />
+                <Wellbeing />
+                <Produce />
+                <NutritionInfo />
+                <WellbeingStarts />
+                <Features />
+            </main>
+        </Layout>
+    );
 }
 
 export default App;
