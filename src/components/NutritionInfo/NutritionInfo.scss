@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 0 0 119px;
-  background-color: $colorBackground;
+  background-color: $color-background;
 
   &__content {
     max-width: 543px;
@@ -30,7 +30,7 @@
   &__icon {
     padding: 14px 16px;
     margin: 0 0 20px;
-    background-color: $colorBrandSecondary;
+    background-color: $color-brand-secondary;
     border-radius: 9px;
   }
 

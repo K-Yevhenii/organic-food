@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   margin: 0 0 104px;
-  background-color: $colorBackground;
+  background-color: $color-background;
 
   &__main {
     display: flex;
@@ -38,8 +38,8 @@
   &__icon {
     padding: 14px 16px;
     margin: 0 0 20px;
-    color: $colorSurfacePrimary;
-    background-color: $colorBrandPrimary;
+    color: $color-surface-primary;
+    background-color: $color-brand-primary;
     border-radius: 9px;
   }
 

@@ -23,19 +23,19 @@
     height: 48px;
     padding: 17px;
     margin: 0 0 45px;
-    color: $colorSurfacePrimary;
-    border: 2px solid $colorSurfacePrimary;
+    color: $color-surface-primary;
+    border: 2px solid $color-surface-primary;
     border-radius: 9px;
   }
 
   &__title {
     padding: 0 0 12px;
-    color: $colorSurfacePrimary;
+    color: $color-surface-primary;
   }
 
   &__description {
     padding: 0 0 28px;
-    color: $colorSurfacePrimary;
+    color: $color-surface-primary;
   }
 
   &__button {
@@ -45,7 +45,7 @@
     font-size: 21.33px;
     font-weight: 600;
     line-height: 24px;
-    color: $colorSurfacePrimary;
+    color: $color-surface-primary;
     text-align: center;
     background: transparent;
     border: solid 1px;

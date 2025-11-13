@@ -11,7 +11,7 @@
   font-style: semibold;
   font-weight: 600;
   line-height: 24px;
-  color: $colorBrandPrimary;
+  color: $color-brand-primary;
   text-align: center;
   letter-spacing: 0;
 
@@ -19,7 +19,7 @@
     width: 26px;
     height: 26px;
     content: "";
-    background-color: $colorBackground;
+    background-color: $color-background;
     border-radius: 50%;
   }
 }
