@@ -31,6 +31,7 @@ export default defineConfig([
         },
         rules: {
             "arrow-body-style": ["error", "as-needed"],
+            "no-unused-vars": "off",
             "@stylistic/padding-line-between-statements": ["error", { blankLine: "always", prev: "*", next: "return" }],
         },
     },

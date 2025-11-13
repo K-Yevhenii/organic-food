@@ -1,1 +1,1 @@
-export { default } from "./NutritionInfo"
+export { default } from "./NutritionInfo";

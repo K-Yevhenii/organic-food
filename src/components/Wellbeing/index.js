@@ -1,1 +1,1 @@
-export { default } from "./Wellbeing"
+export { default } from "./Wellbeing";

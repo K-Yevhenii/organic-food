@@ -1,18 +1,24 @@
-$colorTextPrimary: #2a2a2a;
-$colorTextSecondary: #2b2b2b;
-$colorSurfacePrimary: #ffffff;
-$colorBrandPrimary: #285e67;
-$colorBrandSecondary: #fce2d7;
-$colorBackground: #f4f4f4;
-$colorLogo: #eaeaea;
+$color-text-primary: #2a2a2a;
+$color-text-secondary: #2b2b2b;
+$color-surface-primary: #fff;
+$color-brand-primary: #285e67;
+$color-brand-secondary: #fce2d7;
+$color-background: #f4f4f4;
+$color-logo: #eaeaea;
 
 * {
   text-decoration: inherit;
 }
 
-@mixin styleText($fontFamily, $fontStack, $fontWeight, $fontSize, $lineHeight) {
+@mixin style-text(
+  $fontFamily,
+  $fontStack,
+  $fontWeight,
+  $fontSize,
+  $lineHeight
+) {
   font-family: $fontFamily, $fontStack;
-  font-weight: $fontWeight;
   font-size: $fontSize;
+  font-weight: $fontWeight;
   line-height: $lineHeight;
 }

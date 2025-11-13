@@ -1,4 +1,3 @@
-
 const nutritionInfoItem = [
     { id: 1, text: "Lorem ipsum dolor sit amet consectetur.Quam ut consequat at a. Diam lacus platea orci vel elit" },
     { id: 2, text: "Lorem ipsum dolor sit amet consectetur.Quam ut consequat at a. Diam lacus platea orci vel elit" },
@@ -6,5 +5,3 @@ const nutritionInfoItem = [
 ];
 
 export default nutritionInfoItem;
-
-

@@ -1,31 +1,31 @@
 @use "../../styles/variables" as *;
 
 .wellbeing-starts {
-  background-image: url("/public/background-img.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   max-width: 1300px;
   padding: 110px 0;
   margin: 0 0 12px;
+  background-image: url("/public/background-img.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &__content {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 0 0 228px;
+    align-items: center;
     max-width: 650px;
+    padding: 0 0 228px;
+    margin: 0 auto;
   }
 
   &__icon {
     width: 44px;
     height: 48px;
-    border: 2px solid $colorSurfacePrimary;
     padding: 17px;
-    border-radius: 9px;
     margin: 0 0 45px;
     color: $colorSurfacePrimary;
+    border: 2px solid $colorSurfacePrimary;
+    border-radius: 9px;
   }
 
   &__title {
@@ -39,16 +39,16 @@
   }
 
   &__button {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 21.33px;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 67px;
-    border: solid 1px;
     padding: 16px;
-    background: transparent;
-    color: $colorSurfacePrimary;
     padding: 16px 80px;
+    font-family: Poppins, sans-serif;
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $colorSurfacePrimary;
+    text-align: center;
+    background: transparent;
+    border: solid 1px;
+    border-radius: 67px;
   }
 }

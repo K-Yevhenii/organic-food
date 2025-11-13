@@ -1,23 +1,24 @@
 @use "../../styles/variables" as *;
+
 .logo {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 12px;
-  font-family: Poppins;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 21.33px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: $colorBrandPrimary;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 5px;
+  font-family: Poppins, sans-serif;
+  font-size: 21.33px;
+  font-style: semibold;
+  font-weight: 600;
+  line-height: 24px;
+  color: $colorBrandPrimary;
+  text-align: center;
+  letter-spacing: 0;
 
   &::before {
-    content: "";
     width: 26px;
     height: 26px;
+    content: "";
     background-color: $colorBackground;
     border-radius: 50%;
   }
