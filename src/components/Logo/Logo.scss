@@ -1,25 +1,21 @@
 @use "../../styles/variables" as *;
 
 .logo {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5px;
-  font-family: Poppins, sans-serif;
-  font-size: 21.33px;
-  font-style: semibold;
-  font-weight: 600;
-  line-height: 24px;
-  color: $color-brand-primary;
-  text-align: center;
-  letter-spacing: 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $color-brand-primary;
+    text-align: center;
 
-  &::before {
-    width: 26px;
-    height: 26px;
-    content: "";
-    background-color: $color-background;
-    border-radius: 50%;
-  }
+    &::before {
+        width: 26px;
+        height: 26px;
+        content: "";
+        background-color: $color-background;
+        border-radius: 50%;
+    }
 }

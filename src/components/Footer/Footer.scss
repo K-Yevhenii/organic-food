@@ -1,21 +1,74 @@
 @use "../../styles/variables" as *;
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: $color-surface-primary;
-  background-color: $color-brand-primary;
-
-  &__logo-wrapper {
-    padding: 78px 0 0;
-    color: $color-surface-primary;
-  }
-
-  &__link-list {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 18px 0 78px;
-  }
+    color: $color-surface-primary;
+    background-color: $color-brand-primary;
+
+    @media (min-width: 1024px) {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+        flex-direction: column;
+
+        &__wrapper {
+            @media (min-width: 600px) and (max-width: 1023px) {
+                display: contents;
+            }
+        }
+    }
+
+    &__logo {
+        padding: 5px;
+        color: inherit;
+
+        @media (min-width: 1024px) {
+            padding-left: 119px;
+        }
+    }
+
+    &__logo-wrapper {
+        padding-top: 78px;
+        color: $color-surface-primary;
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            order: 1;
+            padding-bottom: 30px;
+            padding-left: 139px;
+        }
+    }
+
+    &__link-list {
+        display: flex;
+        gap: 26px;
+
+        @media (min-width: 1024px) {
+            align-items: center;
+            padding: 18px 0 78px 119px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            order: 3;
+            padding-bottom: 78px;
+            padding-left: 139px;
+        }
+    }
+
+    &__link-icon {
+        padding: 5px;
+    }
+}
+
+.footer-nav {
+    @media (min-width: 1024px) {
+        padding-right: 119px;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+        order: 2;
+        padding-bottom: 30px;
+        padding-left: 139px;
+    }
 }

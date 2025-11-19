@@ -5,7 +5,7 @@ import footerSocialLinks from "./footerSocialLinks";
 function Footer() {
     return (
         <footer className="footer">
-            <div>
+            <div className="footer__wrapper">
                 <div className="footer__logo-wrapper">
                     <Logo className="footer__logo" />
                 </div>
@@ -17,7 +17,7 @@ function Footer() {
                     ))}
                 </ul>
             </div>
-            <Navigation />
+            <Navigation className="footer-nav" />
         </footer>
     );
 }
