@@ -1,42 +1,35 @@
 @use "../../styles/variables" as *;
 
 .footer {
-    display: flex;
+    padding: 80px 0;
     color: $color-surface-primary;
     background-color: $color-brand-primary;
 
-    @media (min-width: 1024px) {
-        align-items: center;
-        justify-content: space-between;
-    }
+    &__container {
+        display: flex;
+        padding: 0 68px;
 
-    @media (min-width: 600px) and (max-width: 1023px) {
-        flex-direction: column;
+        @media (min-width: 1024px) {
+            flex-wrap: wrap;
+            gap: 36px;
+        }
 
-        &__wrapper {
-            @media (min-width: 600px) and (max-width: 1023px) {
-                display: contents;
-            }
+        @media (min-width: 600px) and (max-width: 1023px) {
+            flex-direction: column;
+            gap: 36px;
         }
     }
 
     &__logo {
         padding: 5px;
         color: inherit;
-
-        @media (min-width: 1024px) {
-            padding-left: 119px;
-        }
     }
 
     &__logo-wrapper {
-        padding-top: 78px;
         color: $color-surface-primary;
 
-        @media (min-width: 600px) and (max-width: 1023px) {
-            order: 1;
-            padding-bottom: 30px;
-            padding-left: 139px;
+        @media (min-width: 1024px) {
+            flex: 1 1 50%;
         }
     }
 
@@ -45,30 +38,11 @@
         gap: 26px;
 
         @media (min-width: 1024px) {
-            align-items: center;
-            padding: 18px 0 78px 119px;
-        }
-
-        @media (min-width: 600px) and (max-width: 1023px) {
-            order: 3;
-            padding-bottom: 78px;
-            padding-left: 139px;
+            flex: 1 1 50%;
         }
     }
 
     &__link-icon {
         padding: 5px;
-    }
-}
-
-.footer-nav {
-    @media (min-width: 1024px) {
-        padding-right: 119px;
-    }
-
-    @media (min-width: 600px) and (max-width: 1023px) {
-        order: 2;
-        padding-bottom: 30px;
-        padding-left: 139px;
     }
 }
