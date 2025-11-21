@@ -11,10 +11,10 @@ function Main() {
             <div className="hero__images">
                 <div className="hero__images-wrapper">
                     <div className="hero__image-wrapper">
-                        <img className="hero__image" src="/jared-rice.png" alt="" />
+                        <img className="hero__image" src="./jared-rice.png" alt="" />
                     </div>
                     <div className="hero__image-wrapper">
-                        <img className="hero__image" src="/katherine-hanlon.png" alt="" />
+                        <img className="hero__image" src="./katherine-hanlon.png" alt="" />
                     </div>
                 </div>
             </div>

@@ -16,7 +16,9 @@ function Wellbeing() {
                     ))}
                 </ul>
             </div>
-            <img className="wellbeing__image" src="yoga.png" alt="" />
+            <div className="wellbeing__image">
+                <img src="./yoga.png" alt="" />
+            </div>
         </section>
     );
 }
