@@ -5,7 +5,7 @@ import "./Layout.scss";
 function Layout({ children }) {
     return (
         <div>
-            <Header className="container" />
+            <Header />
             <main className="container">{children}</main>
             <Footer className="container" />
         </div>

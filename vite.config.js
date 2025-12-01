@@ -6,4 +6,8 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
     base: "/organic-food/",
     plugins: [react(), svgr()],
+    server: {
+        host: true,
+        allowedHosts: true,
+    },
 });
