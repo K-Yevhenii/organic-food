@@ -2,8 +2,11 @@
 
 .produce {
     display: flex;
-    gap: 50px;
     margin: 0 0 104px;
+
+    @media (min-width: 1024px) {
+        gap: 50px;
+    }
 
     @media (min-width: 600px) and (max-width: 1023px) {
         gap: 25px;
@@ -20,8 +23,12 @@
     }
 
     &__image {
-        max-width: 100%;
         height: auto;
+        border-radius: 16px;
+
+        @media (min-width: 1024px) {
+            max-width: 100%;
+        }
 
         @media (min-width: 600px) and (max-width: 1023px) {
             max-width: 50%;
@@ -32,7 +39,7 @@
     &__content {
         display: flex;
         flex-direction: column;
-        padding: calc((52 / 1300) * 100%) 0;
+        padding: 4%;
     }
 
     &__title {

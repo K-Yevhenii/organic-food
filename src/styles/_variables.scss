@@ -7,18 +7,5 @@ $color-background: #f4f4f4;
 $color-logo: #eaeaea;
 
 * {
-  text-decoration: inherit;
-}
-
-@mixin style-text(
-  $fontFamily,
-  $fontStack,
-  $fontWeight,
-  $fontSize,
-  $lineHeight
-) {
-  font-family: $fontFamily, $fontStack;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
+    text-decoration: inherit;
 }
