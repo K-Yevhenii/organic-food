@@ -1,0 +1,29 @@
+.container {
+    max-width: 1300px;
+
+    @media (min-width: 1024px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+        padding-right: 6.5%;
+        padding-left: 6.5%;
+    }
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &__main {
+        flex-grow: 1;
+    }
+
+    &__header {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+}

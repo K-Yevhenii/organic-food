@@ -7,53 +7,47 @@ $color-background: #f4f4f4;
 $color-logo: #eaeaea;
 
 * {
-    font-family: Poppins, sans-serif;
-    text-decoration: inherit;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  text-decoration: inherit;
 }
 
 .typography-h1 {
-    font-size: 65.34px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: $color-text-primary;
+  font-size: 65.34px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $color-text-primary;
 }
 
 .typography-h2 {
-    font-size: 50.52px;
-    font-weight: 600;
-    line-height: 1.2;
+  font-size: 50.52px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .typography-item {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: $color-text-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-text-secondary;
 }
 
 .typography-subtitle {
-    font-size: 37.9px;
-    font-weight: 600;
-    line-height: 0.95;
-    color: $color-surface-primary;
+  font-size: 37.9px;
+  font-weight: 600;
+  line-height: 0.95;
+  color: $color-surface-primary;
 }
 
 .typography-link {
-    font-size: 21.33px;
-    font-weight: 600;
-    line-height: 1.12;
-    color: $color-surface-primary;
+  font-size: 21.33px;
+  font-weight: 600;
+  line-height: 1.12;
+  color: $color-surface-primary;
 }
 
 .typography-text {
-    font-size: 21.33px;
-    font-weight: 400;
-    line-height: 1.14;
-}
-
-@mixin style-text($fontFamily, $fontStack, $fontWeight, $fontSize, $lineHeight) {
-    font-family: $fontFamily, $fontStack;
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    line-height: $lineHeight;
+  font-size: 21.33px;
+  font-weight: 400;
+  line-height: 1.14;
 }
