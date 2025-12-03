@@ -1,22 +1,23 @@
 @use "../../styles/variables" as *;
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 22px 0;
-    background-color: $color-surface-primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 22px 0;
+  color: $color-text-secondary;
+  background-color: $color-surface-primary;
 
-    &__menu-nav {
-        @media (max-width: 480px) {
-            display: none;
-        }
+  &__menu-nav {
+    @media (max-width: 480px) {
+      display: none;
     }
+  }
 
-    &__burger {
-        @media (min-width: 481px) {
-            display: none;
-        }
+  &__burger {
+    @media (min-width: 481px) {
+      display: none;
     }
+  }
 }

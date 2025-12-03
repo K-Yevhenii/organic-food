@@ -8,7 +8,7 @@ function Footer() {
             <div className="container">
                 <div className="footer__container">
                     <div className="footer__logo-wrapper">
-                        <Logo className="footer__logo" />
+                        <Logo className="footer__logo paragraph__text" />
                     </div>
                     <Navigation className="footer__nav" />
                     <ul className="footer__link-list">

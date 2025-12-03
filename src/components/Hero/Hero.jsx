@@ -1,13 +1,13 @@
 import "./Hero.scss";
-function Main() {
+function Hero() {
     return (
         <section className="hero">
-            <h1 className="hero__title">The dawn of a new era in health is here</h1>
-            <p className="hero__description">
+            <h1 className="hero__title paragraph__h1">The dawn of a new era in health is here</h1>
+            <p className="hero__description paragraph__p">
                 Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit blandit
                 facilisis
             </p>
-            <button className="hero__button">Join now</button>
+            <button className="hero__button paragraph__text">Join now</button>
             <div className="hero__images">
                 <div className="hero__images-wrapper">
                     <div className="hero__image-wrapper">
@@ -22,4 +22,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Hero;

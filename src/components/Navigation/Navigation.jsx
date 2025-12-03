@@ -7,8 +7,8 @@ function Navigation({ className, listClassName }) {
         <nav className={clsx("nav", className)}>
             <ul className={clsx("nav__contacts", listClassName)}>
                 {navContactsLinks.map(({ label, href }) => (
-                    <li className="nav__item" key={label}>
-                        <a className="nav__contact" href={href}>
+                    <li className="nav__item paragraph__item" key={label}>
+                        <a className="nav__contact " href={href}>
                             {label}
                         </a>
                     </li>
