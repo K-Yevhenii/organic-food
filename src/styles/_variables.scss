@@ -16,6 +16,32 @@ body {
     font-style: normal;
 }
 
+@mixin button($text-color, $bg: transparent, $border: none, $padding: 16px 80px, $radius: 67px) {
+    padding: $padding;
+    color: $text-color;
+    text-align: center;
+    cursor: pointer;
+    background: $bg;
+    border: $border;
+    border-radius: $radius;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 8px 20px rgb(0 0 0 / 20%);
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+        transform: translateY(-1px);
+    }
+
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.6;
+    }
+}
+
 .paragraph {
     &__h1 {
         line-height: 1.25;

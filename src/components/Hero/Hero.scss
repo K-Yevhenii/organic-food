@@ -1,61 +1,60 @@
 @use "../../styles/variables" as *;
 
 .hero {
-  margin: 0 0 72px;
+    margin: 0 0 72px;
 
-  &__title {
-    margin-bottom: 20px;
-    color: $color-text-primary;
-    text-align: center;
+    &__title {
+        margin-bottom: 20px;
+        color: $color-text-primary;
+        text-align: center;
 
-    @media (min-width: 1024px) {
-      padding-top: 110px;
+        @media (min-width: 1024px) {
+            padding-top: 110px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1024px) {
+            padding-top: 28px;
+        }
     }
 
-    @media (min-width: 600px) and (max-width: 1024px) {
-      padding-top: 28px;
-    }
-  }
-
-  &__description {
-    padding: 16px 8px;
-    margin: 0 0 33px;
-    color: $color-text-secondary;
-    text-align: center;
-  }
-
-  &__button {
-    display: block;
-    padding: 16px 77px;
-    margin: 0 auto 72px;
-    color: $color-surface-primary;
-    background-color: $color-brand-primary;
-    border-radius: 67px;
-  }
-
-  &__images-wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    @media (min-width: 430px) {
-      gap: 48px;
-      justify-content: space-between;
+    &__description {
+        padding: 16px 8px;
+        margin: 0 0 33px;
+        color: $color-text-secondary;
+        text-align: center;
     }
 
-    @media (max-width: 430px) {
-      flex-direction: column;
-      gap: 28px;
+    &__button {
+        display: block;
+        padding: 16px 77px;
+        margin: 0 auto 72px;
+
+        @include button($text-color: $color-surface-primary, $bg: $color-brand-primary, $border: none);
     }
 
-    @media (min-width: 600px) and (max-width: 1023px) {
-      gap: 28px;
-      justify-content: space-between;
-    }
-  }
+    &__images-wrapper {
+        display: flex;
+        justify-content: space-between;
 
-  &__image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 16px;
-  }
+        @media (min-width: 430px) {
+            gap: 48px;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 430px) {
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            gap: 28px;
+            justify-content: space-between;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
 }
