@@ -6,7 +6,7 @@ import clsx from "clsx";
 function Header({ className }) {
     return (
         <header className={clsx("container header", className)}>
-            <Logo className="header__logo" />
+            <Logo className="header__logo paragraph__text" />
             <BurgerMenu className="header__burger" />
             <Navigation className="header__menu-nav " />
         </header>

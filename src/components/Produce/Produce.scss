@@ -45,17 +45,6 @@
     &__title {
         display: block;
         margin: 0 0 50px;
-        font-family: Poppins, sans-serif;
-        font-weight: 600;
-        line-height: 1.2;
-
-        @media (min-width: 1024px) {
-            font-size: 50.52px;
-        }
-
-        @media (min-width: 600px) and (max-width: 1024px) {
-            font-size: 40px;
-        }
     }
 
     &__list {
@@ -67,10 +56,7 @@
 
     &__content-text {
         display: block;
-        font-family: Poppins, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
+        color: $color-text-primary;
     }
 
     &__icon-item {
@@ -80,12 +66,6 @@
     &__item {
         display: flex;
         align-items: center;
-    }
-
-    &__text-item {
-        font-family: Poppins, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
+        color: $color-brand-primary;
     }
 }
