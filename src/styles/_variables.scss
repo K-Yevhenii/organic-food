@@ -44,6 +44,7 @@ body {
 
 .paragraph {
     &__h1 {
+        font-weight: 600;
         line-height: 1.25;
 
         @media (min-width: 1024px) {
