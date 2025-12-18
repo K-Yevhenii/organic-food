@@ -1,59 +1,58 @@
 @use "../../styles/variables" as *;
 
 .features {
-  margin: 0 68.5px;
-  background-color: $color-brand-secondary;
-  border-radius: 16px;
-  transform: translateY(-50%);
+    margin: 0 68.5px;
+    background-color: $color-brand-secondary;
+    border-radius: 16px;
+    transform: translateY(-50%);
 
-  &__list {
-    @media (min-width: 1024px) {
-      display: flex;
-      gap: 17px;
-      justify-content: space-around;
-      padding: 0 66px;
+    &__list {
+        @media (min-width: 1024px) {
+            display: flex;
+            gap: 17px;
+            justify-content: space-around;
+            padding: 0 66px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 600px) and (max-width: 700px) {
+            padding: 40px;
+        }
+
+        @media (min-width: 700px) and (max-width: 1023px) {
+            gap: 40px;
+            padding: 40px 60px;
+        }
     }
 
-    @media (min-width: 600px) and (max-width: 1023px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    // TODO: встановити ширину на кожному медіа-запиті, height: auto;
+    &__icon {
+        padding: 9px;
+
+        @media (min-width: 300px) and (max-width: 1023px) {
+            max-width: 60px;
+            height: auto;
+        }
     }
 
-    @media (min-width: 600px) and (max-width: 700px) {
-      padding: 40px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 1024px) {
+            padding: 119px 0;
+        }
     }
 
-    @media (min-width: 700px) and (max-width: 1023px) {
-      gap: 40px;
-      padding: 40px 60px;
+    &__text {
+        padding: 9px;
+        text-align: center;
     }
-  }
 
-  &__icon {
-    padding: 9px;
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media (min-width: 1024px) {
-      padding: 119px 0;
-    }
-  }
-
-  &__text {
-    padding: 9px;
-    text-align: center;
-  }
-
-  &__button {
-    gap: 16px;
-    width: 257;
-    height: 56;
-    padding: 16px;
-    border-width: 1px;
-    border-radius: 67px;
-  }
+    // TODO: fix it
 }

@@ -13,13 +13,10 @@
     }
 
     &__icon {
+        flex-shrink: 0;
         max-width: 52px;
         height: auto;
         margin-right: 23px;
-
-        @media (min-width: 600px) and (max-width: 1023px) {
-            flex-shrink: 0;
-        }
     }
 
     &__image {
@@ -37,26 +34,48 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        padding: 4%;
+        // TODO: Видалити флекс тут, просто поставити margin-bottom між елементами
+
+        @media (min-width: 1024px) {
+            gap: 50px;
+            padding: 50px 0;
+        }
+
+        @media (min-width: 3000px) and (max-width: 1023px) {
+            gap: 25px;
+        }
     }
 
     &__title {
         display: block;
-        margin: 0 0 50px;
+
+        @media (min-width: 300px) and (max-width: 1023px) {
+            margin-bottom: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 25px;
-        padding: 16px 8px;
+        gap: 50px;
     }
 
     &__content-text {
         display: block;
         color: $color-text-primary;
+        text-align: justify;
+
+        @media (min-width: 300px) and (max-width: 1023px) {
+            margin-bottom: 26px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__icon-item {

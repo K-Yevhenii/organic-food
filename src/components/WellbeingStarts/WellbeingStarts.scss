@@ -20,9 +20,9 @@
     }
 
     &__icon {
-        min-width: 44px;
-        min-height: 48px;
-        padding: 7px;
+        width: 92px;
+        height: auto;
+        padding: 22px;
         margin: 0 0 45px;
         color: $color-surface-primary;
         border: 2px solid $color-surface-primary;
@@ -30,12 +30,13 @@
     }
 
     &__title {
-        padding: 0 0 12px;
+        margin-bottom: 28px;
         color: $color-surface-primary;
         text-align: center;
     }
 
     &__description {
+        margin-bottom: 28px;
         color: $color-surface-primary;
         text-align: center;
     }
