@@ -2,6 +2,8 @@ import "./Footer.scss";
 import Navigation from "../Navigation/Navigation";
 import Logo from "../Logo/Logo";
 import footerSocialLinks from "./footerSocialLinks";
+import SocialIcon from "../SocialLink";
+
 function Footer() {
     return (
         <footer className="footer">
@@ -12,9 +14,9 @@ function Footer() {
                     </div>
                     <Navigation className="footer__nav" />
                     <ul className="footer__link-list">
-                        {footerSocialLinks.map(({ name, icon: Icon }) => (
+                        {footerSocialLinks.map(({ name, icon }) => (
                             <li className="footer__link-item" key={name}>
-                                <Icon className="footer__link-icon" />
+                                <SocialIcon icon={icon} className="footer__link-icon" />
                             </li>
                         ))}
                     </ul>

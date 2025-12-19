@@ -1,66 +1,76 @@
 @use "../../styles/variables" as *;
 
 .wellbeing {
-  display: flex;
-  padding: 50px 110px;
-  margin: 0 0 104px;
-  overflow: hidden;
-  background-color: $color-background;
-  border-radius: 16px;
-
-  @media (min-width: 1024px) {
-    gap: 20px;
-    justify-content: space-between;
-  }
-
-  @media (min-width: 600px) and (max-width: 1023px) {
-    justify-content: center;
-  }
-
-  &__main {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 50px 110px;
+    margin: 0 0 104px;
+    overflow: hidden;
+    background-color: $color-background;
+    border-radius: 16px;
 
     @media (min-width: 1024px) {
-      padding-top: 50px;
+        gap: 20px;
+        justify-content: space-between;
     }
 
     @media (min-width: 600px) and (max-width: 1023px) {
-      text-align: center;
+        justify-content: center;
     }
-  }
 
-  &__list {
-    display: flex;
-    gap: 69px;
-    align-items: center;
-  }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-  &__item {
-    max-width: 260px;
-  }
+        @media (min-width: 1024px) {
+            padding-top: 50px;
+        }
 
-  &__image {
-    align-self: flex-end;
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 -42px;
-
-    @media (min-width: 600px) and (max-width: 1023px) {
-      display: none;
+        @media (min-width: 600px) and (max-width: 1023px) {
+            text-align: center;
+        }
     }
-  }
 
-  &__title {
-    margin: 0 0 61px;
-  }
+    &__list {
+        display: flex;
+        gap: 69px;
+        align-items: center;
+    }
 
-  &__icon {
-    padding: 14px 16px;
-    margin: 0 0 20px;
-    color: $color-surface-primary;
-    background-color: $color-brand-primary;
-    border-radius: 9px;
-  }
+    &__item {
+        max-width: 260px;
+    }
+
+    &__image {
+        align-self: flex-end;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 -42px;
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        // TODO: відцентрувати вказавши auto для горизонтального margin
+        margin: 0 auto 61px;
+    }
+
+    &__icon {
+        min-width: 58px;
+        min-height: 57px;
+        padding: 14px 16px;
+        margin: 0 0 20px;
+        color: $color-surface-primary;
+        background-color: $color-brand-primary;
+        border-radius: 9px;
+    }
+
+    &__content-text {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
 }

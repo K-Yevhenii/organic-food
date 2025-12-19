@@ -3,22 +3,22 @@
 .hero {
     margin: 0 0 72px;
 
+    @media (min-width: 1024px) {
+        padding-top: 110px;
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+        padding-top: 28px;
+    }
+
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 36px;
         color: $color-text-primary;
         text-align: center;
-
-        @media (min-width: 1024px) {
-            padding-top: 110px;
-        }
-
-        @media (min-width: 600px) and (max-width: 1024px) {
-            padding-top: 28px;
-        }
     }
 
     &__description {
-        padding: 16px 8px;
+        padding: 0 8px;
         margin: 0 0 33px;
         color: $color-text-secondary;
         text-align: center;

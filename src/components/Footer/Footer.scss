@@ -1,52 +1,57 @@
 @use "../../styles/variables" as *;
 
 .footer {
-  padding: 80px 0;
-  color: $color-surface-primary;
-  background-color: $color-brand-primary;
-
-  &__container {
-    display: flex;
-    padding: 0 68px;
-
-    @media (min-width: 1024px) {
-      flex-wrap: wrap;
-      gap: 36px;
-    }
-
-    @media (min-width: 600px) and (max-width: 1023px) {
-      flex-direction: column;
-      gap: 36px;
-    }
-  }
-
-  &__logo {
-    padding: 5px;
-    color: inherit;
-  }
-
-  &__logo-wrapper {
+    padding: 80px 0;
     color: $color-surface-primary;
+    background-color: $color-brand-primary;
+
+    &__container {
+        display: flex;
+        padding: 0 68px;
+
+        @media (min-width: 1024px) {
+            flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            flex-direction: column;
+            gap: 36px;
+        }
+    }
+
+    &__logo {
+        padding: 5px;
+        color: inherit;
+    }
+
+    &__logo-wrapper {
+        color: $color-surface-primary;
+
+        @media (min-width: 1024px) {
+            flex: 1 1 50%;
+        }
+    }
+
+    &__link-list {
+        display: flex;
+        gap: 26px;
+
+        @media (min-width: 1024px) {
+            flex: 1 1 50%;
+        }
+    }
+
+    &__nav {
+        color: $color-surface-primary;
+    }
 
     @media (min-width: 1024px) {
-      flex: 1 1 50%;
+        flex: 1 1 50%;
     }
-  }
 
-  &__link-list {
-    display: flex;
-    gap: 26px;
-
-    @media (min-width: 1024px) {
-      flex: 1 1 50%;
+    &__link-icon {
+        min-width: 24px;
+        height: auto;
     }
-  }
-
-  &__nav {
-    color: $color-surface-primary;
-  }
-
-  &__link-icon {
-    padding: 5px;
-  }
 }
