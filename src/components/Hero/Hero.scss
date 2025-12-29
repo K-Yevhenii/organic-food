@@ -1,14 +1,16 @@
 @use "../../styles/variables" as *;
 
 .hero {
-    margin: 0 0 72px;
-
     @media (min-width: 1024px) {
-        padding-top: 110px;
+        padding: 110px 0;
     }
 
-    @media (min-width: 600px) and (max-width: 1024px) {
-        padding-top: 28px;
+    @media (min-width: 600px) and (max-width: 1023px) {
+        padding: 24px 0 80px;
+    }
+
+    @media (max-width: 599px) {
+        padding: 36px 0;
     }
 
     &__title {
@@ -33,42 +35,36 @@
     }
 
     &__images-wrapper {
-        @media (min-width: 1024px) {
-            display: flex;
-            gap: 48px;
-            justify-content: space-between;
+        @media (min-width: 600px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (max-width: 430px) {
-            flex-direction: column;
-            gap: 28px;
+        @media (min-width: 1024px) {
+            gap: 48px;
         }
 
         @media (min-width: 600px) and (max-width: 1023px) {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 28px;
         }
     }
 
     &__image-wrapper {
-        position: relative;
-        height: 390px;
-        overflow: hidden;
         border-radius: 16px;
-    }
 
-    &__image {
-        @media (min-width: 600px) and (max-width: 1023px) {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        @media (min-width: 1024px) {
-            max-width: 100%;
-            height: auto;
+        @media (max-width: 599px) {
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
         }
     }
+
+    // &__image {
+    //     @media (max-width: 1023px) {
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //     }
+    // }
 }

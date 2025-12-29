@@ -1,10 +1,17 @@
 import "./Produce.scss";
 import produceItem from "./produceItem";
 import ProduceIcon from "../../assets/Svg/Icon/produceIcon";
+import ImageMask from "../ui/ImageMask";
+
 function Produce() {
     return (
         <section className="produce">
-            <img className="produce__image" src="./produce.png" alt="fresh organic produce" />
+            {/* <img className="produce__image" src="./produce.png" alt="fresh organic produce" /> */}
+            <ImageMask
+                className="produce__image"
+                height="578px"
+                imageProps={{ src: "./produce.png", alt: "fresh organic produce" }}
+            />
             <div className="produce__content">
                 <h2 className="produce__title paragraph__h2">Fresh organic produce</h2>
                 <p className="produce__content-text  paragraph__item">

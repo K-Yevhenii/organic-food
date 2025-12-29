@@ -43,5 +43,9 @@
 
     &__button {
         @include button($color-surface-primary, transparent, 1px solid $color-surface-primary);
+
+        @media (max-width: 600px) {
+            margin-bottom: 26px;
+        }
     }
 }

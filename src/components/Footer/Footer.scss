@@ -6,8 +6,18 @@
     background-color: $color-brand-primary;
 
     &__container {
-        display: flex;
-        padding: 0 68px;
+        @media (min-width: 600px) {
+            padding: 0 68px;
+        }
+
+        @media (max-width: 599px) {
+            max-width: 155px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 600px) {
+            display: flex;
+        }
 
         @media (min-width: 1024px) {
             flex-wrap: wrap;
@@ -28,6 +38,10 @@
     &__logo-wrapper {
         color: $color-surface-primary;
 
+        @media (max-width: 599px) {
+            margin-bottom: 40px;
+        }
+
         @media (min-width: 1024px) {
             flex: 1 1 50%;
         }
@@ -36,6 +50,7 @@
     &__link-list {
         display: flex;
         gap: 26px;
+        padding: 0 5px;
 
         @media (min-width: 1024px) {
             flex: 1 1 50%;
@@ -44,6 +59,14 @@
 
     &__nav {
         color: $color-surface-primary;
+
+        & ul {
+            @media (max-width: 599px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 36px 40px;
+            }
+        }
     }
 
     @media (min-width: 1024px) {

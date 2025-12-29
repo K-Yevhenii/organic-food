@@ -1,10 +1,36 @@
 @use "../../styles/variables" as *;
 
+.features-overlap {
+    @media (min-width: 1024px) {
+        margin-bottom: -180px;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+        margin-bottom: -160px;
+    }
+
+    @media (max-width: 599px) {
+        margin-bottom: -330px;
+    }
+}
+
 .features {
     margin: 0 68.5px;
     background-color: $color-brand-secondary;
     border-radius: 16px;
     transform: translateY(-50%);
+
+    @media (max-width: 600px) {
+        margin-bottom: 36px;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 104px;
+    }
 
     &__list {
         @media (min-width: 1024px) {
@@ -12,6 +38,13 @@
             gap: 17px;
             justify-content: space-around;
             padding: 0 66px;
+        }
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 71px 0;
         }
 
         @media (min-width: 600px) and (max-width: 1023px) {

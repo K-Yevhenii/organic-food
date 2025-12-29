@@ -10,6 +10,11 @@
         padding-right: 6.5%;
         padding-left: 6.5%;
     }
+
+    @media (max-width: 599px) {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
 }
 
 .layout {

@@ -1,13 +1,17 @@
 @use "../../styles/variables" as *;
 
 .nav {
-  &__contacts {
-    display: flex;
-    gap: 40px;
-  }
+    &__contacts {
+        display: flex;
+        gap: 40px;
 
-  &__contact {
-    padding: 10px 5px;
-    color: inherit;
-  }
+        @media (max-width: 599px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__contact {
+        padding: 10px 5px;
+        color: inherit;
+    }
 }
