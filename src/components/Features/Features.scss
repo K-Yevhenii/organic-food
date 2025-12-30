@@ -63,9 +63,7 @@
     }
 
     &__icon {
-        padding: 9px;
-
-        @media (min-width: 300px) and (max-width: 1023px) {
+        @media (max-width: 1023px) {
             max-width: 60px;
             height: auto;
         }
