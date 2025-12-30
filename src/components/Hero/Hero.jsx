@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import ImageMask from "../ui/ImageMask";
+import ImageMask from "../ImageMask";
 
 function Hero() {
     return (

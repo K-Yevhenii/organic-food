@@ -1,12 +1,11 @@
 import "./Produce.scss";
 import produceItem from "./produceItem";
 import ProduceIcon from "../../assets/Svg/Icon/produceIcon";
-import ImageMask from "../ui/ImageMask";
+import ImageMask from "../ImageMask";
 
 function Produce() {
     return (
         <section className="produce">
-            {/* <img className="produce__image" src="./produce.png" alt="fresh organic produce" /> */}
             <ImageMask
                 className="produce__image"
                 height="578px"
