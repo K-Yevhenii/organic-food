@@ -11,13 +11,13 @@
     background-color: $color-surface-primary;
 
     &__menu-nav {
-        @media (max-width: 480px) {
+        @media (max-width: 599px) {
             display: none;
         }
     }
 
     &__burger {
-        @media (min-width: 481px) {
+        @media (min-width: 600px) {
             display: none;
         }
     }
