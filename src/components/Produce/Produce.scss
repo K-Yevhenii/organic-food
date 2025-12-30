@@ -12,6 +12,7 @@
     }
 
     @media (min-width: 600px) and (max-width: 1023px) {
+        position: relative;
         gap: 25px;
         margin-bottom: 80px;
     }
@@ -32,6 +33,11 @@
 
         @media (max-width: 599px) {
             margin-bottom: 25px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1023px) {
+            position: sticky;
+            top: 70px;
         }
     }
 
