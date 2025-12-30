@@ -7,16 +7,13 @@
 
     &__container {
         @media (min-width: 600px) {
+            display: flex;
             padding: 0 68px;
         }
 
         @media (max-width: 599px) {
-            max-width: 155px;
+            max-width: 200px;
             margin: 0 auto;
-        }
-
-        @media (min-width: 600px) {
-            display: flex;
         }
 
         @media (min-width: 1024px) {
