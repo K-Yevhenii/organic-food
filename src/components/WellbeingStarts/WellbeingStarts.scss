@@ -1,8 +1,7 @@
 @use "../../styles/variables" as *;
 
 .wellbeing-starts {
-    max-width: 1300px;
-    padding: 110px 0;
+    padding: 110px 20px;
     margin: 0 0 12px;
     background-image: url("/public/background-img.svg");
     background-repeat: no-repeat;
@@ -20,13 +19,21 @@
     }
 
     &__icon {
-        width: 92px;
         height: auto;
-        padding: 22px;
         margin: 0 0 45px;
         color: $color-surface-primary;
         border: 2px solid $color-surface-primary;
         border-radius: 9px;
+
+        @media (min-width: 600px) {
+            width: 92px;
+            padding: 22px;
+        }
+
+        @media (max-width: 599px) {
+            width: 60px;
+            padding: 8px 10px;
+        }
     }
 
     &__title {
@@ -39,9 +46,17 @@
         margin-bottom: 28px;
         color: $color-surface-primary;
         text-align: center;
+
+        @media (max-width: 599px) {
+            display: none;
+        }
     }
 
     &__button {
         @include button($color-surface-primary, transparent, 1px solid $color-surface-primary);
+
+        @media (max-width: 600px) {
+            margin-bottom: 26px;
+        }
     }
 }

@@ -1,16 +1,43 @@
 @use "../../styles/variables" as *;
 
 .nutrition-info {
-    display: flex;
-    gap: 6.5%;
-    align-items: center;
-    padding: 80px 110px 110px;
-    margin: 0 0 119px;
     background-color: $color-background;
-    border-radius: 12px;
+    border-radius: 16px;
+
+    @media (max-width: 599px) {
+        padding: 45px 20px;
+        margin-bottom: 36px;
+    }
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+        padding: 105px 20px;
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: 1024px) {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 50px 110px;
+        margin: 0 0 104px;
+    }
+
+    &__content {
+        @media (min-width: 1024px) {
+            padding-top: 50px;
+        }
+
+        @media (max-width: 1023px) {
+            text-align: center;
+        }
+    }
 
     &__title {
-        margin: 0 0 41px;
+        margin: 0 auto 61px;
+
+        @media (max-width: 599px) {
+            text-align: center;
+        }
     }
 
     &__icon {
@@ -25,15 +52,28 @@
     &__list {
         display: flex;
         gap: 69px;
+
+        @media (max-width: 599px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1023px) {
+            justify-content: center;
+        }
     }
 
     &__item {
-        max-width: 240px;
-        color: $color-text-primary;
+        max-width: 260px;
+
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__image {
-        @media (min-width: 600px) and (max-width: 1023px) {
+        @media (max-width: 1023px) {
             display: none;
         }
     }

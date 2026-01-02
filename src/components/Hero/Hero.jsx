@@ -1,4 +1,6 @@
 import "./Hero.scss";
+import ImageMask from "../ImageMask";
+
 function Hero() {
     return (
         <section className="hero">
@@ -10,12 +12,17 @@ function Hero() {
             <button className="hero__button paragraph__text">Join now</button>
             <div className="hero__images">
                 <div className="hero__images-wrapper">
-                    <div className="hero__image-wrapper">
-                        <img className="hero__image" src="./jared-rice.png" alt="" />
-                    </div>
-                    <div className="hero__image-wrapper">
-                        <img className="hero__image" src="./katherine-hanlon.png" alt="" />
-                    </div>
+                    <ImageMask
+                        className="hero__image-wrapper"
+                        height="390px"
+                        imageProps={{ src: "./katherine-hanlon.png", alt: "" }}
+                    />
+
+                    <ImageMask
+                        className="hero__image-wrapper"
+                        height="390px"
+                        imageProps={{ src: "./jared-rice.png", alt: "" }}
+                    />
                 </div>
             </div>
         </section>

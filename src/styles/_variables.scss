@@ -52,7 +52,11 @@ body {
         }
 
         @media (min-width: 600px) and (max-width: 1024px) {
-            font-size: 40px;
+            font-size: 50px;
+        }
+
+        @media (max-width: 599px) {
+            font-size: 45px;
         }
     }
 
@@ -60,11 +64,11 @@ body {
         font-weight: 600;
         line-height: 1.2;
 
-        @media (min-width: 1024px) {
-            font-size: 50.52px;
+        @media (min-width: 600px) {
+            font-size: 50px;
         }
 
-        @media (min-width: 600px) and (max-width: 1024px) {
+        @media (max-width: 599px) {
             font-size: 40px;
         }
     }
@@ -78,7 +82,7 @@ body {
     &__subtitle {
         font-size: 37.9px;
         font-weight: 600;
-        line-height: 0.95;
+        line-height: 1.48;
     }
 
     &__text {
