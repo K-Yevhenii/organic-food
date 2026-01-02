@@ -5,14 +5,18 @@ import "./BurgerMenu.scss";
 
 const BurgerMenu = ({ className }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => setIsOpen((prev) => !prev);
 
     return (
         <>
-            <button className={clsx("burger", className)} onClick={toggleMenu}>
-                <span className={clsx("burger__icon", { burger__menu_open: isOpen })}>
-                    Mobile
-                </span>
+            <button
+                className={clsx("burger", className, { burger_open: isOpen })}
+                onClick={() => setIsOpen((prev) => !prev)}
+                aria-label="Toggle menu"
+                aria-expanded={isOpen}
+            >
+                <span />
+                <span />
+                <span />
             </button>
 
             <div className={clsx("mobile-menu", { "mobile-menu_open": isOpen })}>
