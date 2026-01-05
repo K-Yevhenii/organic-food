@@ -3,10 +3,13 @@
 .nav {
     &__contacts {
         display: flex;
-        gap: 40px;
+
+        @media (min-width: 600px) {
+            gap: 40px;
+        }
 
         @media (max-width: 599px) {
-            margin-bottom: 40px;
+            gap: 30px;
         }
     }
 
